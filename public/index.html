@@ -22,6 +22,9 @@
             spacing: {
               13: "3.25rem",
             },
+            liststyleimg:{
+              checkmark: url('https://www.pngall.com/wp-content/uploads/5/Checklist-PNG-Image.png'),
+            },
           },
         },
       };
@@ -36,7 +39,7 @@
     <h1 class="mb-12 text-center font-bold text-5xl p-6">
       Mari belajar <a href="" class="bg-gradient-to-r from-blue-300 to bg-green-300 bg-clip-text text-transparent">Tailwindcss</a> agar menjadi WebDev yang handal
     </h1>
-  </body>
+
 
   <section class="mb-12 bg-indigo-200">
     <h2 class="text-xl font-semibold text-center">Spacing</h2>
@@ -62,7 +65,7 @@
 
   <section class="mb-12 font-inter max-w-2xl mx-auto">
     <h2 class="text-xl font-semibold">Typography</h2>
-    <h2 class="text-4xl font-bold mb-2">Rhizal sedang Belajar Tailwindcss</h2>
+    <h2 class="text-4xl font-bold mb-2">Rhizal sedang Belajar <a href="" class="bg-gradient-to-tr from-blue-300 to bg-green-300 bg-clip-text text-transparent">Tailwindcss</a></h2>
     <div class="mb-4">Created by <a href="" class="font-bold text-lime-500">Rhizal</a>, 14 Juli 2024</div>
     <p class="mb-4">
     Lorem ipsum dolor sit amet, <a href="" class="font-semibold underline italic hover:not-italic">consectetur</a> adipisicing elit. Fuga sequi,
@@ -78,7 +81,8 @@
       obcaecati!"
       </blockquote>
     </p>
-    <p class="mb-4 antialiased">Lorem ipsum, dolor sit amet <a href="" class="italic md:not-italic">consectetur</a> adipisicing elit. Ipsa veniam, ducimus voluptate unde libero iure exercitationem earum quidem reiciendis, saepe quia officiis. <a href="" class="font-normal md:font-bold">Obcaecati</a> neque consequatur totam, molestiae, praesentium illum at non ad quos natus dolorum illo suscipit ipsa. Vero laborum voluptas pariatur ea cum accusamus iure dolore mollitia sint. Odio.</p>
+    <p class="mb-4">Lorem ipsum, dolor sit amet <a href="" class="italic md:not-italic">consectetur</a> adipisicing elit. Ipsa veniam, ducimus voluptate unde libero iure exercitationem earum quidem reiciendis, saepe quia officiis. <a href="" class="font-normal md:font-bold bg-gradient-to-tr from-lime-600 to to-blue-700 bg-clip-text text-transparent">Obcaecati</a> neque consequatur totam, molestiae, praesentium illum at non ad quos natus dolorum illo suscipit ipsa. Vero laborum voluptas pariatur ea cum accusamus iure dolore mollitia sint. Odio.</p>
+
     <h3 class="text-xl font-semibold">Font Variant Numeric</h3>
     <div class="font-serif flex-col space-y-4 mb-12">
     <p class="ordinal">1st</p>
@@ -86,6 +90,7 @@
     <p class="slashed-zero tabular-nums ordinal">1234567890</p>
     <p class="lining-nums">1234567890</p>
     </div>
+
     <h3 class="font-semibold text-xl">Letter spacing</h3>
     <div class="flex-col space-y-4 mb-12">
       <p class="tracking-tighter">Text with letter spacing</p>
@@ -93,18 +98,55 @@
       <p class="tracking-wider">Text with letter spacing</p>
       <p class="tracking-widest">Text with letter spacing</p>
     </div>
+
     <h3 class="font-semibold text-xl">Line clamp</h3>
     <div class="flex-col space-y-4 mb-12">
       <p class="text-balance line-clamp-3 hover:line-clamp-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in rerum consequuntur esse sint aspernatur deleniti, cupiditate alias dolorum mollitia quibusdam blanditiis necessitatibus ex modi eaque ipsum harum atque quo, molestias velit molestiae aperiam autem perferendis sit. Officiis esse, exercitationem numquam consequatur distinctio voluptatibus modi enim ipsum nisi inventore quam!</p>
     </div>
+
     <h3 class="font-semibold text-xl">Line height</h3>
     <div class="flex-col space-y-4 mb-12">
       <p class="text-balance leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in rerum consequuntur esse sint aspernatur deleniti, cupiditate alias dolorum mollitia quibusdam blanditiis necessitatibus ex modi eaque ipsum harum atque quo, molestias velit molestiae aperiam autem perferendis sit. Officiis esse, exercitationem numquam consequatur distinctio voluptatibus modi enim ipsum nisi inventore quam!</p>
     </div>
     <h3 class="font-semibold text-xl">List style image</h3>
-    <ul class="list-image-[https://www.pngall.com/wp-content/uploads/5/Checklist-PNG-Image.png(checkmark)]">
+    <ul class="list-disc list-image-[url('https://www.flaticon.com/free-icon-font/check_3917749?related_id=3917749')] mb-12">
       <li>Ini sudah dimasukkan</li>
       <li>Ini sudah dimasukkan</li>
     </ul>
+
+    <h3 class="font-semibold text-xl">List Style Position and Type</h3>
+    <ul class="list-disc list-inside">
+      <li>Ini adalah unorderlist</li>
+      <li>Contoh 1</li>
+    </ul>
+    <ul class="mt-4 list-decimal  list-inside">
+      <li>Ini adalah orderlist</li>
+      <li>Contoh 1</li>
+    </ul>
   </section>
+  <section class="mb-12">
+    <h2 class="font-semibold text-xl">Text ALign</h2>
+    <p class="text-justify p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste delectus excepturi, non vel praesentium iure necessitatibus numquam commodi quos aperiam nulla quaerat. Repellendus, perferendis enim. Voluptas ut porro omnis totam, eaque vero ullam molestiae praesentium excepturi. Laboriosam, officiis, rerum inventore doloribus sint ullam sit ab, ipsa nesciunt necessitatibus molestias ea nihil in commodi natus praesentium odio harum. Impedit, non est!</p>
+  </section>
+  <section>
+    <h2 class="font-semibold text-xl">Text Decoration</h2>
+    <div class="mb-6">
+      <h3 class="font-bold px-4">Underline</h3>
+      <ul class="list-disc list-inside">
+        <li class="underline decoration-dotted">Lorem ipsum <a href="" class="decoration-double decoration-2">dolor</a>, sit amet <a href="" class="decoration-pink-400">consectetur</a> adipisicing elit.</li>
+        <li class="overline">Lorem, ipsum dolor sit amet consectetur <a href="" class="decoration-dashed decoration-4">adipisicing</a> elit. Sapiente?</li>
+        <li class="line-through decoration-wavy">Lorem ipsum dolor sit amet consectetur <a href="" class="decoration-indigo-500 decorationdas">adipisicing</a> elit. Voluptas, amet!</li>
+        <li class="no-underline">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li class="underline decoration-2 underline-offset-4">Lorem ipsum dolor sit amet consectetur <a href="" class="underline-offset-2">adipisicing</a> elit. Vel, explicabo? Repudiandae, fugiat id?</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2 class="font-semibold text-xl">Text Wrap</h2>
+    <article class="text-wrap">
+      <h2 class="font-bold text-2xl">Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsam ex atque aspernatur, facilis repellat adipisci dolorem dicta quasi tempora vitae quibusdam, similique voluptates quia veniam, obcaecati neque accusamus in officiis numquam laudantium. Laudantium, ex recusandae in eum ipsum, dolorem deleniti voluptatem itaque necessitatibus, quae accusamus totam quas. A, facere?</p>
+    </article>
+  </section>
+  </body>
 </html>
