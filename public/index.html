@@ -30,9 +30,9 @@
       };
     </script>
     <style type="text/tailwindcss">
-      * {
+      /* * {
         border: 1px solid red;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -42,13 +42,13 @@
 
 
   <section class="mb-12 bg-indigo-200">
-    <h2 class="text-xl font-semibold text-center">Spacing</h2>
+    <h2 class="text-xl font-semibold text-center bg-teal-200">Spacing</h2>
     <div class="m-8 bg-yellow-200">Margin</div>
     <div class="px-2 py-4 bg-green-200">Padding</div>
-    <div class="flex flex-row-reverse space-x-reverse space-x-4 px-4 mb-4 ">
-      <div class="bg-blue-200 w-32 h-12 rounded text-center">01</div>
-      <div class="bg-blue-200 w-32 h-12 rounded text-center">02</div>
-      <div class="bg-blue-200 w-32 h-12 rounded text-center">03</div>
+    <div class="flex flex-row-reverse justify-center space-x-reverse space-x-4 px-4 mb-4 ">
+      <div class="bg-blue-200 w-32 h-12 rounded text-center p-2">01</div>
+      <div class="bg-blue-200 w-32 h-12 rounded text-center p-2">02</div>
+      <div class="bg-blue-200 w-32 h-12 rounded text-center p-2">03</div>
     </div>
     <div class="flex flex-col space-y-4 px-4">
       <div class="bg-blue-200 w-32 h-12 rounded"></div>
@@ -148,12 +148,51 @@
       <p class="indent-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsam ex atque aspernatur, facilis repellat adipisci dolorem dicta quasi tempora vitae quibusdam, similique voluptates quia veniam, obcaecati neque accusamus in officiis numquam laudantium. Laudantium, ex recusandae in eum ipsum, dolorem deleniti voluptatem itaque necessitatibus, quae accusamus totam quas. A, facere?</p>
     </article>
   </section>
-  <section>
-    <div class="max-w-xl h-96 bg-[#00fac4] mx-auto my-[42px] bg-clip-content overflow-y-scroll bg-scroll" style="background-image: url('https://unsplash.com/photos/a-person-in-a-kayak-on-a-calm-lake-Y58zsQeHWX8')">
+  <section class="mb-12">
+    <div class="max-w-xl h-96 bg-[#00fac4] mx-auto my-[42px] bg-clip-content overflow-y-scroll bg-fixed text-white" style="background-image: url(../src/space2.avif)">
       <p class="p-5 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque aliquid voluptatibus ipsum ut ab maxime eius, culpa odit! Ratione, nobis fuga iusto sapiente ullam, pariatur totam obcaecati commodi iste dolorum, dolorem a voluptatibus expedita consequatur quam! In impedit tempora, quo esse fuga sequi dolores velit autem eveniet magni error quis corrupti obcaecati itaque, illum cumque repudiandae nemo. Ut quasi eaque rem, accusamus, beatae mollitia optio praesentium alias quae soluta porro doloribus tempore itaque neque ex commodi temporibus illo similique ratione qui quo dignissimos, cum necessitatibus excepturi! Itaque dicta, doloribus excepturi laboriosam possimus ea aut natus velit id nemo earum magni sequi quibusdam consectetur saepe voluptate explicabo nulla aspernatur facere doloremque qui quidem distinctio optio? Laudantium deleniti accusantium at corrupti rerum voluptates. Placeat sit, ipsam voluptates dicta atque maiores officiis accusantium illum in facere laudantium, iure nihil quibusdam dignissimos quo, modi iste. Voluptatem minima optio tenetur animi voluptas, illum soluta voluptatum exercitationem, assumenda beatae accusamus, ut ipsa consequatur id labore. Animi, velit! Doloremque a sequi pariatur dolor odit autem quos nostrum mollitia modi reprehenderit, ex expedita, reiciendis sit eum quaerat placeat quasi ducimus optio voluptates dolores amet. Excepturi rem inventore cumque. Vero aliquam, deleniti a ullam neque totam facere quaerat. Architecto.</p>
     </div>
 
-    <div class="mt-12 max-w-xl h-[500px] mx-auto my-8" style="background-image: url(../src/css/space.jpg);"></div>
+    <div class="mt-12 max-w-xl h-[325px] mx-auto my-8 bg-contain bg-repeat-x bg-center bg-clip-border rounded-2xl border-4 border-lime-400 shadow-lg shadow-neutral-400 flex overflow-hidden" style="background-image: url(../src/space.jpg);">
+      <div class="w-[100px] h-[100px] rounded-2xl border-[1.5px] m-auto backdrop-blur-sm"></div>
+      <div class="w-[100px] h-[100px] rounded-2xl border-[1.5px] m-auto backdrop-blur-sm"></div>
+      <div class="w-[100px] h-[100px] rounded-2xl border-[1.5px] m-auto backdrop-blur-sm"></div>
+    </div>
+
+    <div class="mt-12 max-w-xl h-[200px] mx-auto my-8 outline-dashed outline-yellow-300 outline-offset-8 ring-4 ring-blue-500 flex flex-col justify-center items-center">
+      <button class="w-[100px] h-[40px] rounded-lg bg-slate-500 text-white ring-2 ring-blue-400 ring-offset-2 hover:bg-slate-300 hover:text-black hover:ring-yellow-400 shadow-md shadow-teal-100">
+        Clickme!!
+      </button>
+      <h3 class="font-bold text-3xl text-lime-600 blur-[1px]">Hallo Bang</h3>
+    </div>
+  </section>
+  <section class="mb-12">
+    <h3 class="text-xl font-semibold flex justify-center">Pseudo-classes</h3>
+    <button class="my-10 bg-sky-400 px-5 py-2 rounded-full font-inter font-semibold mx-auto block text-white hover:bg-sky-500 active:bg-sky-800 focus:ring-2 focus:ring-sky-300">Save Changes</button>
+    <button class="my-10 bg-sky-400 px-5 py-2 rounded-full font-inter font-semibold mx-auto block text-white hover:bg-sky-500">Hover</button>
+    <button class="my-10 bg-sky-400 px-5 py-2 rounded-full font-inter font-semibold mx-auto block text-white active:bg-sky-800">Active (Click)</button>
+  </section>
+  
+  <form action="" class="w-[500px] min-h-full bg-indigo-50 mx-auto rounded-xl">
+    <label for="" class="block">
+      <h2 class="font-bold text-2xl text-slate-600 text-center pt-8">Login</h2>
+      <span class="block text-lg font-semibold text-slate-700 pl-7 pt-8">Username</span>
+      <input type="text" value="JhonExample" class="mt-1 w-[440px] block mx-auto text-slate-400 bg-slate-100 py-3 px-6 rounded-md border border-slate-400 shadow-none placeholder:bg-slate-400 focus:outline-none focus:border-sky-500 focus:shadow-md invalid:text-red-600 invalid:border-red-600 focus:invalid:border-red-600 focus:invalid:text-red-600 focus:text-black focus:bg-white">
+      <span class="block text-lg font-semibold text-slate-700 pl-7 pt-8">Email</span>
+      <input type="email" value="Jhon@example.com" class="mt-1 w-[440px] block mx-auto text-slate-400 bg-slate-100 py-3 px-6 rounded-md border border-slate-400 shadow-none placeholder:bg-slate-400 focus:outline-none focus:border-sky-500 focus:shadow-md invalid:text-red-600 invalid:border-red-600 focus:invalid:border-red-600 focus:invalid:text-red-600 focus:text-black focus:bg-white">
+      <span class="block text-lg font-semibold text-slate-700 pl-7 pt-8">Password</span>
+      <input type="password" value="*******" class="mt-1 w-[440px] block mx-auto text-slate-400 bg-slate-100 py-3 px-6 rounded-md border border-slate-400 shadow-none placeholder:bg-slate-400 focus:outline-none focus:border-sky-500 focus:shadow-md invalid:text-red-600 invalid:border-red-600 focus:invalid:border-red-600 focus:invalid:text-red-600 focus:text-black focus:bg-white">
+      <a href="" class="text-sm px-8 hover:text-slate-500 focus:text-sky-600 hover:underline opacity-60 italic mt-4">Don't have a account? Regist Here.</a>
+    </label>
+    <div class="justify-end flex">
+      <button class="bg-sky-400 text-white py-2 px-5 rounded-[7px] font-semibold my-6 mx-8 hover:bg-sky-500 active:bg-sky-600 focus:ring-2 focus:ring-sky-300 hover:shadow-lg">Save Changes</button>
+    </div>
+  </form>
+  <section class="my-12">
+    <div class="max-w-lg border border-slate-200 p-5 shadow-md rounded-xl mx-auto hover:bg-sky-400 group">
+      <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">My Card</h5>
+      <p class="text-slate-700 text-pretty group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta repellat labore atque quidem quisquam, ad expedita debitis iste, quos numquam itaque id amet hic nostrum cum vitae rerum accusantium cupiditate alias ut. Dolorum unde repellendus neque, accusamus veniam expedita.</p>
+    </div>
   </section>
   </body>
 </html>
